@@ -46,3 +46,5 @@ def unregister_user():
 @user_bp.route("/users", methods=["GET"])
 def list_users():
     return jsonify(load_users())
+
+user_routes = user_bp
