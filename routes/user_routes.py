@@ -47,4 +47,9 @@ def unregister_user():
 def list_users():
     return jsonify(load_users())
 
+
+@user_bp.route("/test", methods=["GET"])
+def test():
+    return jsonify({"message": "서버가 정상 작동 중입니다!"})
+
 user_routes = user_bp
