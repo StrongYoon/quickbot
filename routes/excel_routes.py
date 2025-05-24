@@ -47,3 +47,5 @@ def download_excel():
     os.makedirs("downloads", exist_ok=True)
     df.to_excel(output_path, index=False)
     return open(output_path, "rb").read()
+
+excel_routes = excel_bp
